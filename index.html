@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Bilal</title>     
+    
+</head>
+
+<body style="background-color: black;">
+
+    <div class="w3-bar w3-grey w3-border w3-padding">
+        <a class="navbar-brand w3-left" href="#">
+            <img src="https://see.fontimg.com/api/renderfont4/d99MX/eyJyIjoiZnMiLCJoIjoxNzEsInciOjI2MjUsImZzIjo2NSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/QmlsYWw/bilal.png"
+                alt="Avatar Logo" style="width:60px; margin-right:30px;" class="rounded-pill">
+                
+        </a>
+        <a href="#" class="w3-bar-item w3-button w3-light-green w3-mobile">Home</a>
+        <a href="./about.html" class="w3-bar-item w3-button w3-mobile">About</a>
+        <div class="w3-dropdown-hover">
+            <a href="#" class=" w3-button w3-mobile">Mic</a>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="./photo album.html" class="w3-bar-item w3-button">Photo Album</a>
+                <a href="./news paper.html" class="w3-bar-item w3-button">News Paper</a>
+                <a href="./Magazine.html" class="w3-bar-item w3-button">Magazine</a>
+                <a href="./blog.html" class="w3-bar-item w3-button">My Blog</a>
+                <a href="./Ads.html" class="w3-bar-item w3-button">Ads</a>
+            </div>
+        </div>
+        <a href="./contact us.html" class="w3-bar-item w3-button w3-mobile">Contact Us</a>
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-right"
+            style="margin-left: 10px;">Login</button>
+        <button class="w3-bar-item w3-right w3-button w3-blue w3-mobile">Go</button>
+        <input type="text" class="w3-bar-item w3-right w3-input w3-white w3-mobile" placeholder="Search..">
+
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+                <div class="w3-center"><br>
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                        class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+                    <img src="https://www.w3schools.com/w3css/img_avatar.png" alt="Avatar" style="width:30%"
+                        class="w3-circle w3-margin-top">
+                </div>
+
+                <form class="w3-container" action="/action_page.php">
+                    <div class="w3-section">
+                        <label><b>Username</b></label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username"
+                            name="usrname" required>
+                        <label><b>Password</b></label>
+                        <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw"
+                            required>
+                        <input class="w3-check w3-margin-top" type="checkbox" required> Remember me
+                        <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+                        <button class="w3-button w3-block w3-yellow w3-section w3-padding" type="submit">Reset</button>
+
+                    </div>
+                </form>
+
+                <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                    <button onclick="document.getElementById('id01').style.display='none'" type="button"
+                        class="w3-button w3-red">Cancel</button>
+                    <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="w3-content w3-section" style="max-width:500px">
+        <p>The w3-animate-fading class animates an element in and out (takes about 10 seconds).</p>
+        <img class="mySlides w3-animate-fading" src="https://www.w3schools.com/w3css/img_rr_01.jpg" style="width:100% ;">
+        <img class="mySlides w3-animate-fading" src="https://www.w3schools.com/w3css/img_rr_03.jpg" style="width:100% ;">
+        <img class="mySlides w3-animate-fading" src="https://www.w3schools.com/w3css/img_rr_04.jpg" style="width:100% ;">
+        <img class="mySlides w3-animate-fading" src="https://www.w3schools.com/howto/img_forest.jpg" style="width:100% ;">
+        <img class="mySlides w3-animate-fading" src="https://webneel.com/wallpaper/sites/default/files/images/07-2013/3%20koenigsegg%20car%20hd%20wallpaper.jpg" style="width:100% ;">
+        <img class="mySlides w3-animate-fading" src="https://webneel.com/wallpaper/sites/default/files/images/07-2013/3%20koenigsegg%20car%20hd%20wallpaper.jpg" style="width:100% ;">
+        <img class="mySlides w3-animate-fading" src="https://www.w3schools.com/css/img_mountains.jpg" style="width:100% ;">
+        <img class="mySlides w3-animate-fading" src="https://www.w3schools.com/w3css/img_mountains.jpg" style="width:100% ;">
+        <marquee behavior="" scrollamount="5" direction="right" scrolldelay="right" bgcolor="lightgreen" height="20">Hello
+            World</marquee>
+      </div>
+
+        <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 10000);    
+        }
+        </script> 
+
+        
+</body>
+
+</html>
